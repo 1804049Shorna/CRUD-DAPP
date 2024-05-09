@@ -9,13 +9,15 @@ contract chai {
         string gender;
         string nationality;
     }
-
+    
+    User[] user;
     mapping(address => User) public users;
     uint256 public totalUsers;
 
     // Function to add a new user
     function addUser(string memory _name, string memory _email, string memory _gender, string memory _nationality) public {
         users[msg.sender] = User(_name, _email, _gender, _nationality);
+        user.push(User(_name,_email,_gender,_nationality));
         totalUsers++;
     }
 
@@ -36,8 +38,7 @@ contract chai {
     }
 
     // Function to get a user's details by address
-    function getUser(address _userAddress) public view returns (string memory, string memory, string memory, string memory) {
-        User memory user = users[_userAddress];
-        return (user.name, user.email, user.gender, user.nationality);
+    function getUser() public view returns (User [] memory) {
+      return user;
     }
 }

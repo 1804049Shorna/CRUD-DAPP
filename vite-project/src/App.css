@@ -1,10 +1,52 @@
+*{
+  background-color: rgb(254, 255, 255);
+}
+li{
+  width: 400px;
+  background-color: rgb(83, 96, 196);
+  height: 50px;
+  /* border-radius: 5px; */
+  border: none;
+  padding: 20px;
+}
+
+.ul_design{
+  background-color: rgb(26, 66, 30);
+}
+.link_style{
+   /* background-color: black;
+   color: white;
+   height: 20px;
+   width: 40px;
+   padding: 10px; */
+   background-color: black;
+  color: white;
+  padding: 10px;
+  display: inline-block; /* Ensure each link occupies its own line */
+  width: 120px; /* Set a fixed width for all links */
+  text-align: center; /* Center the text inside the link */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Optional: add some border-radius for styling */
+  
+
+}
+.component-container {
+  display: flex;
+  justify-content: space-between; /* Optional: adds some space between the components */
+}
+.component-container_1 {
+  display: flex;
+  /* justify-content: space-between; Optional: adds some space between the components */
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
+.sm{
+  color: black;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

@@ -1,0 +1,83 @@
+.center {
+    /* width: 100%; */
+    width: 400px;
+    margin: auto;
+     padding: 20px 20px; 
+    /* background: #fff; */
+    border: solid #000000 1px;
+    border-radius: 10px;
+    /* background-color: rgb(197, 211, 224); */
+    font-family: sans-serif; /* Use the imported font */
+    background-color: rgb(255, 255, 255);
+  }
+
+  .center p {
+    color: black;
+    height: 30px;
+    background: none;
+    font-weight: bold;
+  }
+  
+  .center h1 {
+    /* font-size: 14px; */
+    padding: 5px;
+    color: #000;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    background-color: rgb(90, 124, 236);
+    
+  }
+
+  
+  #form {
+    /* border-radius: 5px; */
+    border: none;
+    display: flex;
+    flex-direction: column; /* Arrange form fields vertically */
+    align-items: center; /* Align form fields horizontally */
+    justify-content: center; /* Align form fields vertically */
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .inputbox {
+    /* background-color: aqua; */
+    color: black;
+    margin-bottom: 20px; /* Add margin between input boxes */
+  }
+  
+  .inputbox span {
+    background-color: rgb(255, 255, 255);
+    display: block; /* Ensure each label appears on its own line */
+    font-size: 1em;
+    margin-bottom: 5px; /* Add margin below label */
+  }
+  
+  .inputbox input {
+    width: calc(100% - 40px); /* Adjust input width */
+    border: 2px solid #c7c2c2;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 100%;
+  }
+  
+  #submit {
+    width: 100%; /* Make submit button full width */
+    color: black;
+    background-color: rgb(90, 124, 236);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  
