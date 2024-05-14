@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Link, Navigate } from "react-router-dom";
 import { ethers } from "ethers";
-import abi from "./contractJSON/chai.json";
+import abi from "../contractJSON/chai.json";
 import "./App.css";
 import AddUser from "./components/addUser";
 import UserList from "./components/userList";
@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     const initialize = async () => {
-      const contractAddress = "0xF83F28e186920184E4FEDf52a97fb25563cBF178";
+      const contractAddress = "0x5e59b8A43FF9212B0F25cD52D1ED3FcF4a001539";
       const contractABI = abi.abi;
 
       try {
@@ -58,25 +58,25 @@ function App() {
     <Router>
       <div className="divv">
         {hideNavRoutes.indexOf(window.location.pathname) === -1 && ( // Check if current route is in hidden list
-         <div className="div_design">
-          <nav  className="ul_design">
-            <ul >
-              <li>
-                <Link to="/addUser" className="link_style">Add User</Link>
-              </li>
-              <li>
-                <Link to="/updateUser" className="link_style">Update User</Link>
-              </li>
-              <li>
-                <Link to="/deleteUser" className="link_style">Delete User</Link>
-              </li>
-              <li>
-                <Link to="/userList" className="link_style">User List</Link>
-              </li>
-            </ul>
-          </nav>
-         </div>
-          
+          <div className="div_design">
+            <nav className="ul_design">
+              <ul >
+                <li>
+                  <Link to="/addUser" className="link_style">Add User</Link>
+                </li>
+                <li>
+                  <Link to="/updateUser" className="link_style">Update User</Link>
+                </li>
+                <li>
+                  <Link to="/deleteUser" className="link_style">Delete User</Link>
+                </li>
+                <li>
+                  <Link to="/userList" className="link_style">User List</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
         )}
 
         <Routes>
@@ -85,7 +85,7 @@ function App() {
           <Route path="/deleteUser" element={<DeleteUser state={state} />} />
           <Route
             path="/userList"
-            element={<UserList state={state} account={account} />}
+            element={<UserList state={state} />}
           />
           <Route path="/" element={<Home />} />
         </Routes>
